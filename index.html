@@ -1,26 +1,278 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Home Page</title>
-    
+    <title>NewsWebsite</title>
+    <link rel="stylesheet" href="css/indexCSS.css" media="screen" type="text/css">
 </head>
 <body>
-    <div>
-        <a href="newswebsite.html" alt="News website link" title="News website">WebDesign Project - News website
-        </a>
+<div class="wrapper">
+    <header id="top">
+        <div class="logoAndLinks" onclick="showHome()">
+            <div class="logo">
+            </div><!--Logo-->
+            <div>
+                <nav class="topMenu">
+                    <ul>
+                        <li><a href="#" title="World News">World</a></li>
+                        <li><a href="#" title="Health News">Health</a></li>
+                        <li><a href="#" title="Science News">Science</a></li>
+                    </ul>
+                </nav>
+            </div>  <!--Top Menu-->
+        </div><!--Logo and links-->
+    </header>
+
+    <nav class="topNav">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="politics.html">Politics</a></li>
+            <li><a href="#">Business</a></li>
+            <li><a href="#">Technology</a></li>
+        </ul>
+    </nav>
+</div><!--Logo & Navigation-->
+<div class="header">
+    <div class="wrapper">
+        <div class="bigPic" id="bigPic">
+        </div><!--Big Picture-->
+        <div class="grey">
+            <p class="headline" id="p1">Trump says he may visit Jerusalem.</p>
+            <p id="ht" class="headlineText">US President Trump says he may visit Jerusalem..</p>
+
+            <div class="move">
+                <img alt="clock" src="img/littleclock.gif" width="15" height="15">
+                <span id ="time" class="clock">3 hrs</span>
+                <span id="place" class="place">US</span>
+            </div><!--clock & place-->
+
+            <div class="dots">
+                <img  src="./img/grey_circle.png"  alt="Click here" title="Click here" width="24" height="24" onclick="showPic1();">
+                <img src="./img/grey_circle.png" alt="Click here" title="Click here" width="24" height="24"  onclick="showPic2();">
+                <img src="./img/grey_circle.png"  alt="Click here" title="Click here" width="24" height="24"  onclick="showPic3();">
+            </div>  <!--Three white dots-->
+        </div><!--Headline area-->
     </div>
-    <div>
-        <a href="https://github.com/ppriyadarshini123/News-website.git" alt="GitHub repository" title="GitHub repository">Webdesign project added to GitHub repository
-        </a>
-    </div>
-    <div>
-        <a href="./wordpress/" alt="ECommerce website" title="ECommerce website">WordPress project - ECommerce website
-        </a>
-    </div>
-    <div>
-        <a href="./Flowchart/flowchart.html">Introduction to Programming - Flowchart
-        </a>
-    </div>
+</div><!--Header-->
+
+
+<div class="wrapper">
+    <main>
+        <nav class="shortNav">
+            <ul>
+                <li><a href="#latestStories">Latest Stories</a></li>
+                <li><a href="#mostRead">Most Read</a></li>
+            </ul>
+        </nav>
+        <div class="latestRow" id="latestStories">
+            <div class="latestCol">
+                <div class="latestStories">
+                    <div>
+                        <iframe width="200" height="200" src="https://www.youtube.com/embed/hzT6EHjLMLo"  allow="encrypted-media" allowfullscreen ></iframe>
+                    </div><!--Div with news video-->
+                    <div>
+                        <p class="headL"> Theresa May on NHS - Courtesy BBC News</p>
+                        <p class="text">PM Theresa May discusses with..</p>
+                        <a href="#" class="readMore">Read more<img src="img/newLayout/arrow.png" class="arrow" alt="arrow" width="10" height="10"></a>
+
+                        <div class="timePlace">
+                            <img alt="clock"  src="img/littleclock.gif" width="15" height="15">
+                            <span class="verticalLine">2 hr</span> Brussels
+                        </div><!--Clock & place-->
+                    </div><!--Text and read more-->
+                </div><!--Upper left news-->
+
+                <div class="latestStories">
+                    <div>
+                        <a><img src="img/sky_diving.jpg" class="picture" title="Sky Diving" alt="Sky Diving" width=200 height="200"></a>
+                    </div><!--Div with image link-->
+                    <div>
+                        <p class="headL"> Women set new skydiving record in Milwaukee  </p>
+                        <p class="text"> Fifty-seven women set a new skydiving world record.</p>
+                        <a href="#" class="readMore">Read more<img src="img/newLayout/arrow.png" alt="arrow" class="arrow"  width="10" height="10"></a>
+
+                        <div class="timePlace">
+                            <img alt="clock" src="img/littleclock.gif" width="15" height="15">
+                            <span class="verticalLine">4 hr</span> Milwaukee
+                        </div><!--Clock & place-->
+                    </div><!--Text and read more-->
+                </div><!--Middle left news-->
+
+                <div class="latestStories">
+                    <div>
+                        <a><img src="img/iceland.jpg" class="picture"  title="Iceland" alt="Iceland" width=200 height="200"></a>
+                    </div><!--Div with image link-->
+                    <div>
+                        <p class="headL"> Iceland celebrates white Christmas ! </p>
+                        <p class="text"> Severe snowfall in Iceland could not diminish the enthusiasm of people.  </p>
+                        <a href="#" class="readMore">Read more<img alt="arrow" class="arrow" src="img/newLayout/arrow.png" width="10" height="10"></a>
+                        <div class="timePlace">
+                            <img alt="clock"  src="img/littleclock.gif" width="15" height="15">
+                            <span class="verticalLine">1 hr</span> Iceland
+                        </div><!--Clock & place-->
+                    </div><!--Text and read more-->
+                </div><!--Bottom left news-->
+            </div><!--Left column of Latest stories-->
+
+            <div class="latestCol">
+                <div class="latestStories">
+                    <div>
+                        <a><img src="img/st%20michael%20church.jpg" class="picture" title="St. Michael Church" alt="St. Michael Church" width=200 height="200"></a>
+                    </div><!--Div with image link-->
+                    <div>
+                        <p class="headL">St.Michael Church vandalized</p>
+                        <p class="text">The people of the minority community vandalized ..</p>
+                        <a href="#" class="readMore">Read more<img alt="arrow" src="img/newLayout/arrow.png" class="arrow" width="10" height="10"></a>
+                        <div class="timePlace">
+                            <img alt="clock" src="img/littleclock.gif" width="15" height="15">
+                            <span class="verticalLine">2 hr</span> England
+                        </div><!--Clock & place-->
+                    </div><!--Text and read more-->
+                </div><!--upper right news-->
+
+                <div class="latestStories">
+                    <div>
+                        <iframe width="200" height="200" src="https://www.youtube.com/embed/j51O4lf232w"  allow=" encrypted-media" allowfullscreen></iframe>
+                    </div><!--Div with news video-->
+                    <div>
+                        <p class="headL">The Royal Wedding: Courtesy PBS NewsHour</p>
+                        <p class="text">Watch the highlights of the Royal Wedding</p>
+                        <a href="#" class="readMore">Read more<img alt="arrow" src="img/newLayout/arrow.png" class="arrow" width="10" height="10"></a>
+                        <div class="timePlace">
+                            <img alt="clock"  src="img/littleclock.gif" width="15" height="15">
+                            <span class="verticalLine">4 hr</span> Windsor
+                        </div><!--Clock & place-->
+                    </div><!--Text and read more-->
+                </div><!--Upper middle news-->
+
+                <div class="latestStories">
+                    <div>
+                        <a><img src="img/nhs_birthday.JPG" class="picture" title="NHS celebrates its 50th Birthday !" alt="NHS celebrates its 50th Birthday !" width=200 height="200"></a>
+                    </div><!--Div with image link-->
+                    <div>
+                        <p class="headL">NHS celebrates its 50th Birthday !</p>
+                        <p class="text">The National Health Service celebrated its 50th Birthday today.</p>
+                        <a href="#" class="readMore">Read more<img alt="arrow" class="arrow"  src="img/newLayout/arrow.png" width="10" height="10"></a>
+                        <div class="timePlace">
+                            <img alt="clock"  src="img/littleclock.gif" width="15" height="15">
+                            <span class="verticalLine">6 hr</span> England
+                        </div><!--Clock & place-->
+                    </div><!--Text and read more-->
+                </div><!--lower right news-->
+            </div>   <!--Right column of Latest Stories-->
+        </div><!--Latest Stories-->
+
+        <h2 id="mostRead">Most Read</h2>
+        <div class="paddBottom">
+            <div class="latestRow">
+                <div class="leftColMostRead">
+                    <ul>
+                        <li><a class="link" href="#">1. Brexit : Explained </a></li>
+                        <li><a class="link" href="#">2. Theresa May promises money for NHS - BBC News</a></li>
+                        <li><a class="link" href="#">3. Over 40s health check includes dementia advice - BBC News</a></li>
+                        <li><a class="link" href="#">4. Digital skills gap opens up in English schools - BBC News</a></li>
+                        <li><a class="link" href="#">5. Audi boss arrested over diesel scandal - BBC News</a></li>
+                        <li><a class="link" href="#">6. Child and two men die in Japan earthquake - BBC News</a></li>
+                        <li><a class="link" href="#">7. How can a snake eat a human? - BBC News</a></li>
+                        <li><a class="link" href="#">8. Brexit could cost £1k per household - BBC News </a></li>
+                    </ul>
+                </div><!--Most Read left column-->
+
+                <div class="rightColMostRead">
+                    <div class="latestStories">
+                        <div>
+                            <iframe width="200" height="200" src="https://www.youtube.com/embed/ymYdfqEgPLY"  allow="encrypted-media" allowfullscreen></iframe>
+                        </div><!--Div with news video-->
+                        <div>
+                            <p class="headL">China reacts to US announcement of $50 billion in tariffs: Daily Mail</p>
+                            <p class="text">China will impose 25 percent tariffs on 659 US goods worth $50 billion.</p>
+                            <a href="#" class="readMore">Read more<img alt="arrow" class="arrow"  src="img/newLayout/arrow.png" width="10" height="10"></a>
+                            <div class="timePlace">
+                                <img alt="clock" src="img/littleclock.gif" width="15" height="15">
+                                <span class="verticalLine">5 hr</span> China
+                            </div><!--Clock & place-->
+                        </div><!--Text and read more-->
+                    </div><!--Upper right news-->
+
+                    <div class="latestStories">
+                        <div>
+                            <iframe width="200" height="200" src="https://www.youtube.com/embed/m82_zP3YiHI"  allow=" encrypted-media" allowfullscreen></iframe>
+                        </div><!--Div with news video-->
+                        <div>
+                            <p class="headL">After Kim meeting, Trump says fake news is the biggest enemy - Fox News</p>
+                            <p class="text">The president blasts the media for 'fighting hard to downplay' the denuclearization deal.</p>
+                            <a href="#" class="readMore">Read more<img alt="arrow" class="arrow"  src="img/newLayout/arrow.png" width="10" height="10"></a>
+                            <div class="timePlace">
+                                <img alt="clock"  src="img/littleclock.gif" width="15" height="15">
+                                <span class="verticalLine">3 hr</span> US
+                            </div><!--Clock & place-->
+                        </div><!--Text and read more-->
+                    </div><!--lower right news-->
+                </div><!--Most Read right column-->
+            </div><!--Video section of Most Read-->
+        </div><!--Complete Most Read section-->
+    </main>
+</div><!--/wrapper-->
+
+<footer class="footer">
+    <div class="latestRowSiteMap">
+        <div class="siteSocial">
+            <div class="latestColSiteMap">
+                <p class="title">Sitemap</p>
+                <div class="sitemap">
+                    <div>
+                        <ul>
+                            <li><a class="linkSiteMap" href="#">Home</a></li>
+                            <li><a class="linkSiteMap" href="politics.html">Politics</a></li>
+                            <li><a class="linkSiteMap" href="#">Weather</a></li>
+                            <li><a class="linkSiteMap" href="#">Music</a></li>
+                        </ul>
+                    </div><!--sitemap first column-->
+                    <div>
+                        <ul>
+                            <li><a class="linkSiteMap" href="#">TV</a></li>
+                            <li><a class="linkSiteMap" href="#">World</a></li>
+                            <li><a class="linkSiteMap" href="#">Business</a></li>
+                            <li><a class="linkSiteMap" href="#">Health</a></li>
+                        </ul>
+                    </div><!--sitemap second column-->
+
+                    <div>
+                        <ul>
+                            <li><a class="linkSiteMap" href="#">Technology</a></li>
+                            <li><a class="linkSiteMap" href="#">Sport</a></li>
+                            <li><a class="linkSiteMap" href="#">Food</a></li>
+                            <li><a class="linkSiteMap" href="#">Local</a></li>
+                        </ul>
+                    </div><!--sitemap third column-->
+                    <div>
+                        <ul>
+                            <li><a class="linkSiteMap" href="#">Arts</a></li>
+                            <li><a class="linkSiteMap" href="#">Radio</a></li>
+                            <li><a class="linkSiteMap" href="#">City</a></li>
+                            <li><a class="linkSiteMap" href="#">TV</a></li>
+                        </ul>
+                    </div><!--sitemap fourth column-->
+                </div><!--sitemap columns-->
+            </div><!--Sitemap-->
+
+            <div class="latestColSocialMedia">
+                <div class="goToTop">
+                    <div>
+                        <h3 class="title">Find us here:</h3>
+                        <a href="#"><img src="./img/twitter.png" title="Find us on Twitter" alt="Twitter" width="20" height="20"></a>
+                        <a href="#"><img src="./img/facebook.png" title="Find us on Facebook" alt="Facebook" width="20" height="20"></a>
+                        <a href="#"><img src="./img/youtube.png" title="Find us on YouTube" alt="YouTube" width="20" height="20"></a>
+                    </div><!--Social media icons-->
+                    <div>
+                        <a href="#top" class="linkTop" >Go to top</a>
+                    </div><!--go to top-->
+                </div><!--Social media icons and go to top-->
+            </div><!--Social media icons and go to top border-->
+        </div><!--siteSocial-->
+    </div><!-- Footer row-->
+    <div class="base">Copyright &copy; 2018 TheNews, London</div>
+</footer>
+<script src="./js/script.js"></script>
 </body>
 </html>
