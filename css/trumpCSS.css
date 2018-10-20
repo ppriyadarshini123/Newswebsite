@@ -1,0 +1,367 @@
+/* =====================   CSS RESET SECTION ==== */
+/* http://meyerweb.com/eric/tools/css/reset/ v2.0b2 | 201101 */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym,
+address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead,
+tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, menu, nav, output,
+ruby, section, summary, time, mark,
+audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+img{vertical-align: top;}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, menu, nav,
+section, canvas, main,video { display: block; }
+body { line-height: 1; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+table { border-collapse: collapse; border-spacing: 0; }
+html, body{  width: 100%;  height: 100%;  }
+
+/*   GENERAL SECTION */
+
+body {
+    font-family: "Merriweather", serif;
+    background-color: lightgray;
+}
+
+.wrapper{
+    width: 960px;
+    margin: 0 auto;
+}
+
+/*    LOGO AND LINKS SECTION */
+.logo
+{
+    width: 100%;
+    height: 160px;
+    cursor: pointer;
+}
+
+.logoAndLinks
+{
+    background: url("../img/newlayout/news.png") no-repeat;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+/*   TOP MENU SECTION */
+.topMenu ul
+{
+    width:260px;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+
+.topMenu ul li
+{
+    padding-right: 10px;
+    border-right: 2px solid darkgray;
+}
+.topMenu ul li a
+{
+    color: #40444B;
+    text-decoration: none;
+    padding-bottom: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.topMenu ul li a:hover
+{
+    border-bottom: 1px solid #40444B;
+}
+
+/*   TOP NAVIGATION SECTION */
+.topNav
+{
+    margin-top: -40px;
+    width: 500px;
+    margin-left:470px;
+    padding-bottom: 23px;
+}
+.topNav ul li a
+{
+    color: #40444B;
+    text-decoration: none;
+    padding-bottom: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.topNav ul
+{
+    display: flex;
+    justify-content: space-around;
+    border-left: 2px solid darkgray;
+}
+.topNav ul li
+{
+    padding-right: 25px;
+    border-right: 2px solid darkgray;
+}
+
+.topNav ul li a:hover
+{
+    border-bottom: 1px solid #40444B;
+}
+
+
+/*    MAIN STORY SECTION */
+.fb-share-button
+{
+    width: 100px;
+}
+.headline
+{
+    font-size: 30px;
+    color: #ffffff;
+    padding-top: 20px;
+    font-weight: bold;
+    padding-bottom: 20px;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+.grey
+{
+    background-color:#40444B;
+    margin-bottom: 10px;
+    border-top: 3px solid #A4031F;
+}
+.bigPic
+{
+    padding-bottom: 20px;
+    border-bottom: 2px solid #C6BFB7;
+    display: flex;
+    justify-content: space-between;
+}
+.fullStory
+{
+    background-color: #ffffff;
+    margin-right: 10px;
+    padding: 20px;
+    border-top: 3px solid #A4031F;
+}
+
+.may1
+{
+    float:right;
+    padding: 10px;
+}
+
+
+.textFullStory
+{
+    padding-bottom: 15px;
+    padding-top: 10px;
+    color:black;
+    font-size: 14px;
+    text-decoration: none;
+    padding-right: 15px;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+
+
+.subHeadline
+{
+    padding-top: 10px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.timePlace
+{
+    padding-top: 5px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    padding-bottom: 20px;
+    color: #ffffff;
+}
+.clock
+{
+    padding-right: 2px;
+}
+.verticalLine
+{
+    padding-right: 4px;
+    border-right: 2px solid #C6BFB7;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.place
+{
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+
+/*    TOP STORIES */
+
+.columnTopStories
+{
+    height: 387px;
+    padding-left: 20px;
+    background-color: #ffffff;
+    border-top: 3px solid #A4031F;
+}
+
+.text
+{
+    padding-bottom: 15px;
+    padding-top: 10px;
+    color:black;
+    font-size: 12px;
+    text-decoration: none;
+    padding-right: 15px;
+    line-height: 1.2;
+    letter-spacing: 1px;
+}
+
+.top1
+{
+    width: 250px;
+    padding-top: 10px;
+    border-bottom: 2px solid #C6BFB7;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+.link
+{
+    color: #40444B;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    text-decoration: none;
+}
+
+.link:hover
+{
+    text-decoration: underline;
+    color:black;
+}
+
+/* COLUMN FEATURES*/
+
+.columnFeatures
+{
+    border-top: 3px solid #A4031F;
+    margin-top: -1700px;
+    float:right;
+    height: 595px;
+    padding-left: 20px;
+    background-color: #ffffff;
+}
+
+.columnFeatures div a img
+{
+    padding-bottom: 10px;
+}
+
+/*  SITEMAP SECTION   */
+
+.sitemap
+{
+    display:flex;
+}
+
+
+.latestRowSiteMap
+{
+    border-top: 3px solid #A4031F;
+    background-color: #40444B;
+}
+
+.title
+{
+    color: #ffffff;
+    letter-spacing: 1px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 14px;
+}
+
+.linkSiteMap
+{
+    color: #40444B;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    text-decoration: none;
+}
+
+.linkSiteMap:hover
+{
+    text-decoration: underline;
+    color:#ffffff;
+}
+
+
+.siteSocial
+{
+    margin: 0 auto;
+    width:960px;
+    display:flex;
+    justify-content: space-between;
+}
+
+.latestColSiteMap ul
+{
+    padding-top: 20px;
+}
+
+.latestColSiteMap ul li
+{
+    padding-bottom: 20px;
+    width:150px;
+}
+
+.latestColSiteMap ul li a
+{
+    text-decoration: none;
+    color:#ffffff;
+}
+
+.latestColSiteMap ul li a:hover
+{
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+/* SOCIAL MEDIA SECTION*/
+
+.goToTop
+{
+    display:flex;
+    justify-content: space-between;
+}
+.goToTop div a
+{
+    padding-left: 10px;
+    color: #ffffff;
+    padding-top: 10px;
+}
+
+.latestColSocialMedia ul li a
+{
+    text-decoration: none;
+}
+
+.latestColSocialMedia ul li a:hover
+{
+    text-decoration: underline;
+    color:#40444B;
+}
+
+.base
+{
+    background-color: black;
+    height: 50px;
+    color:#ffffff;
+    text-align: center;
+    padding-top: 10px;
+    letter-spacing: 2px;
+}

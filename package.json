@@ -1,0 +1,19 @@
+{
+  "name": "newswebsite",
+  "version": "1.0.0",
+  "description": "website for news",
+  "main": "index.html",
+  "scripts": {
+    "sync":"browser-sync start --directory --server --files '*.js,*.html,*.css'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "Newswebsite"
+  },
+  "author": "Payal",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.24.7"
+  }
+}
